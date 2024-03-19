@@ -4,26 +4,36 @@
         <title>Atividade 4</title>
     </head>
     <body>
-        <form>
-            Login: <br> 
+        <form action="http://191.252.62.149:8080/pweb/salvar.jsp" method="post">
+            <label for="login"> Login: </label><br> 
             <input type="text" name="login"><br>
-            Senha: <br>
+            <label for="senha"> Senha: </label><br>
             <input  type="password" name="senha"><br>
-            Confirme a senha: <br>
-            <input type="password" name="senha"><br>
-            Nome: <br>
+            <label for="csenha"> Confirme a senha: </label> <br>
+            <input type="password" name="csenha"><br>
+            <label for="nome"> Nome: </label><br>
             <input  type="text" name="nome"><br>
-            Sexo: <br>
-            <input type="radio" name="sexo">Masculino<br>
-            <input type="radio" name="sexo">Feminino<br>
-            Email: <br>
+            <label for="sexo"> Sexo: </label><br>
+            <label><input type="radio" value="Masculino" name="sexo">Masculino<br></label>
+            <label><input type="radio" value="Feminino" name="sexo">Feminino<br></label>
+            <label for="email"> Email: </label><br>
             <input type="email" name="email"><br>
-            Interesses: <br>
-            <input type="checkbox" name="interesses">Futebol<br>
-            <input type="checkbox" name="interesses">Pol�tica<br>
-            <input type="checkbox" name="interesses">Economia<br>
-            <input type="checkbox" name="interesses">Carros<br>
-            <input type="checkbox" name="interesses">Celebridades<br>
+            Interesses:<br>
+            <label><input type="checkbox" value="Futebol" name="interesses">Futebol</label><br>
+            <label><input type="checkbox" value="Politica" name="interesses">Política</label><br>
+            <label><input type="checkbox" value="Economia" name="interesses">Economia</label><br>
+            <label><input type="checkbox" value="Carros" name="interesses">Carros</label><br>
+            <label><input type="checkbox" value="Celebridades" name="interesses">Celebridades</label><br>
+            <label for="estado"> Estado: </label><br>
+            <select name="estado" id="estado">
+                <option value=" piaui"> PI </option>
+                <option value=" maranhao"> MA </option>
+                <option value=" riodejaneiro"> RJ </option>
+                <option value=" pernambuco"> PE </option>
+            </select><br><br>
+            <label for="obs"> Observações: </label><br>
+            <textarea value="obs" id="obs" name="observacoes" rows="4" cols="50">
+            </textarea><br>
             <input type="submit" value="Enviar">
         </form>
     </body>
